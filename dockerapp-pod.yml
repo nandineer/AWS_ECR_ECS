@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+       name: dockerapp-pod
+       labels:
+          app: dockerapp-ws
+spec:
+       containers:
+       - name: dockerapp
+         image: nandineer/dockerapp
+         ports:
+           - containerPort: 80	
